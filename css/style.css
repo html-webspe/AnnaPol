@@ -1202,7 +1202,7 @@ body::after {
 
 .matrix {
   background-color: #f8eee2;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .matrix__body {
