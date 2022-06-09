@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220609213755">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div id="preloader">
+		<div class="dws-progress-bar"></div>
+	</div>
+	<div class="wrapper">
+		<svg viewBox="0 0 60 59" fill="none" style="height:0px">
+			<symbol id="logo">
+				<path d="M29.9339 13.3469L28.5068 10.6303C28.5067 10.6303 28.5067 10.6302 28.5067 10.6301C27.3314 8.36641 27.3319 5.69503 28.5064 3.46422L28.5065 3.4641L29.8498 0.906222L33.0526 7.04383L33.0527 7.04407L36.372 13.437L36.3721 13.4372L56.7865 52.9153L56.7869 52.916L59.6097 58.4454H13.3013L13.8017 57.4549C13.8017 57.4548 13.8018 57.4547 13.8018 57.4547C15.2057 54.7196 18.1134 52.9873 21.2859 52.9873H50.2319H50.4488L50.3492 52.7947L33.2538 19.741L33.2537 19.7409L29.9342 13.3475L29.9339 13.3469ZM40.4402 46.9827H12.4632H12.3825L12.3457 47.0546L9.40348 52.8019L9.40296 52.8029L8.80828 53.9902C8.80823 53.9903 8.80818 53.9904 8.80814 53.9904C7.41014 56.7373 4.51477 58.4453 1.38848 58.4453H0.216415L3.05961 52.9225L3.05974 52.9222L6.00192 47.175L6.00199 47.1749L23.2737 13.5296L24.5443 15.9977C24.5443 15.9978 24.5444 15.998 24.5445 15.9981C25.7153 18.3043 25.7153 21.021 24.5443 23.3272L15.288 41.3714L15.1894 41.5636H15.4055H32.3978C35.59 41.5636 38.519 43.3036 39.9501 46.0835L39.9501 46.0835L39.9515 46.0862L40.4402 46.9827Z" fill="url(#paint0_linear_106_9809)" stroke="url(#paint1_linear_106_9809)" stroke-width="0.263994" />
+				<defs>
+					<linearGradient id="paint0_linear_106_9809" x1="24.5513" y1="14.3648" x2="32.9144" y2="56.8845" gradientUnits="userSpaceOnUse">
+						<stop offset="0.227083" stop-color="#AB863F" />
+						<stop offset="0.508333" stop-color="#F9EF9D" />
+						<stop offset="0.745017" stop-color="#B39046" />
+					</linearGradient>
+					<linearGradient id="paint1_linear_106_9809" x1="24.0233" y1="15.1568" x2="14.9829" y2="47.61" gradientUnits="userSpaceOnUse">
+						<stop stop-color="#FDF18C" />
+						<stop offset="0.461458" stop-color="#AB863F" />
+						<stop offset="1" stop-color="#FEF189" />
+					</linearGradient>
+				</defs>
+			</symbol>
+		</svg>
+		<svg viewBox="0 0 18 18" fill="none" style="height:0px">
+			<symbol id="check">
+				<path d="M5.2843 8.48327L8.4843 12.0569L13.2843 6.69647M17 9C17 13.4183 13.4183 17 9 17C4.58172 17 1 13.4183 1 9C1 4.58172 4.58172 1 9 1C13.4183 1 17 4.58172 17 9Z" stroke="#4B3806" />
+			</symbol>
+		</svg>
+		<svg viewBox="0 0 22 38" fill="none" style="height:0px">
+			<symbol id="mark">
+				<path d="M9.30769 28.733C9.34295 26.6859 9.67789 24.986 10.3125 23.6335C10.9824 22.2809 11.9343 20.7821 13.1683 19.1371C14.367 17.5652 15.2484 16.176 15.8125 14.9697C16.4119 13.7268 16.7115 12.2097 16.7115 10.4185C16.7115 7.78644 16.0417 5.75758 14.7019 4.33189C13.3974 2.9062 11.7756 2.19336 9.83654 2.19336C7.65064 2.19336 5.76442 3.01587 4.17788 4.66089C2.6266 6.26936 1.58654 8.55411 1.05769 11.5152H0C0 9.68735 0.0705128 8.24338 0.211538 7.18326C0.352564 6.08658 0.722756 5.1544 1.32212 4.38672C2.30929 3.14382 3.71955 2.10197 5.55288 1.26118C7.42147 0.420395 9.3782 0 11.4231 0C14.2083 0 16.6587 0.767677 18.774 2.30303C20.9247 3.80183 22 6.50698 22 10.4185C22 11.9538 21.7356 13.3247 21.2067 14.531C20.6779 15.7374 20.0433 16.7792 19.3029 17.6566C18.5625 18.5339 17.5577 19.594 16.2885 20.8369C14.7019 22.2992 13.5032 23.5969 12.6923 24.7302C11.8814 25.8634 11.4583 27.1977 11.4231 28.733H9.30769ZM10.3654 38C9.55449 38 8.86699 37.7076 8.30289 37.1227C7.77404 36.5378 7.50962 35.8432 7.50962 35.039C7.50962 34.1982 7.77404 33.4853 8.30289 32.9004C8.86699 32.3155 9.55449 32.0231 10.3654 32.0231C11.1763 32.0231 11.8638 32.3155 12.4279 32.9004C12.992 33.4853 13.274 34.1982 13.274 35.039C13.274 35.8432 12.9744 36.5378 12.375 37.1227C11.8109 37.7076 11.141 38 10.3654 38Z" fill="#D9AB62" />
+			</symbol>
+		</svg>
+		<svg viewBox="0 0 40 40" fill="none" style="height:0px">
+			<symbol id="inst">
+				<path d="M20.0002 14.7929C17.133 14.7929 14.7932 17.1328 14.7932 19.9999C14.7932 22.8671 17.133 25.207 20.0002 25.207C22.8674 25.207 25.2072 22.8671 25.2072 19.9999C25.2072 17.1328 22.8674 14.7929 20.0002 14.7929ZM35.6174 19.9999C35.6174 17.8437 35.6369 15.707 35.5158 13.5546C35.3947 11.0546 34.8244 8.83588 32.9963 7.00775C31.1643 5.17572 28.9494 4.60932 26.4494 4.48822C24.2932 4.36713 22.1564 4.38666 20.0041 4.38666C17.8478 4.38666 15.7111 4.36713 13.5588 4.48822C11.0588 4.60932 8.84003 5.17963 7.0119 7.00775C5.17987 8.83978 4.61347 11.0546 4.49237 13.5546C4.37128 15.7109 4.39081 17.8476 4.39081 19.9999C4.39081 22.1523 4.37128 24.2929 4.49237 26.4453C4.61347 28.9453 5.18378 31.164 7.0119 32.9921C8.84394 34.8242 11.0588 35.3906 13.5588 35.5117C15.715 35.6327 17.8517 35.6132 20.0041 35.6132C22.1603 35.6132 24.2971 35.6327 26.4494 35.5117C28.9494 35.3906 31.1682 34.8202 32.9963 32.9921C34.8283 31.1601 35.3947 28.9453 35.5158 26.4453C35.6408 24.2929 35.6174 22.1562 35.6174 19.9999V19.9999ZM20.0002 28.0117C15.5666 28.0117 11.9885 24.4335 11.9885 19.9999C11.9885 15.5663 15.5666 11.9882 20.0002 11.9882C24.4338 11.9882 28.0119 15.5663 28.0119 19.9999C28.0119 24.4335 24.4338 28.0117 20.0002 28.0117ZM28.34 13.5312C27.3049 13.5312 26.4689 12.6953 26.4689 11.6601C26.4689 10.6249 27.3049 9.789 28.34 9.789C29.3752 9.789 30.2111 10.6249 30.2111 11.6601C30.2114 11.9059 30.1632 12.1493 30.0693 12.3765C29.9754 12.6036 29.8376 12.81 29.6638 12.9838C29.49 13.1577 29.2836 13.2955 29.0564 13.3894C28.8293 13.4833 28.5858 13.5315 28.34 13.5312V13.5312Z">
+				</path>
+				</path>
+			</symbol>
+		</svg>
+		<svg viewBox="0 0 40 40" fill="none" style="height:0px">
+			<symbol id="fb">
+				<path d="M34.375 4.375H5.625C4.93359 4.375 4.375 4.93359 4.375 5.625V34.375C4.375 35.0664 4.93359 35.625 5.625 35.625H34.375C35.0664 35.625 35.625 35.0664 35.625 34.375V5.625C35.625 4.93359 35.0664 4.375 34.375 4.375ZM30.7656 13.4961H28.2695C26.3125 13.4961 25.9336 14.4258 25.9336 15.793V18.8047H30.6055L29.9961 23.5195H25.9336V35.625H21.0625V23.5234H16.9883V18.8047H21.0625V15.3281C21.0625 11.293 23.5273 9.09375 27.1289 9.09375C28.8555 9.09375 30.3359 9.22266 30.7695 9.28125V13.4961H30.7656Z" fill="white"></path>
+			</symbol>
+		</svg>
+
+
+		<header class="header">
+			<div class="header__container">
+				<a href="/" class="header__logo logo">
+					<svg width="60" height="59" aria-hidden="true">
+						<use xlink:href="#logo"></use>
+					</svg>
+				</a>
+
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a href="" class="menu__link">Обо мне</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Бесплатный рассчёт психоматрицы</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
+							<li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+						</ul>
+						<a href="+380973008111" class="menu__tel">+38 097 300 81 11</a>
+						<div class="header__social">
+							<a href="https://www.instagram.com/annapol_numerolog/" class="contacts__social-link">
+								<svg aria-hidden="true">
+									<use xlink:href="#inst"></use>
+								</svg>
+							</a>
+							<a href="https://www.facebook.com/profile.php?id=100053703644340" class="contacts__social-link">
+								<svg aria-hidden="true">
+									<use xlink:href="#fb"></use>
+								</svg>
+							</a>
+						</div>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+
+				<div class="header__lang lang" data-da=".menu__body, 767.98, last">
+					<a href="" class="lang__item lang__item-active">РУС</a>
+					<a href="" class="lang__item">укр</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="section intro">
+				<div class="intro__container">
+					<div class="intro__body">
+						<div class="intro__img">
+							<picture><source srcset="img/hero/hero-img.webp" type="image/webp"><img src="img/hero/hero-img.png" alt=""></picture>
+						</div>
+						<div class="intro__content">
+							<h1 class="intro__title">Нумеролог <span>Анна поль</span> </h1>
+							<p class="intro__text">Открой свой путь, отыщи вторую половинку, найди выход из сложной или безвыходной
+								ситуации. Тайна чисел расставит всё по местам.
+							</p>
+
+							<p class="intro__return">
+								<svg width="18" height="18" aria-hidden="true">
+									<use xlink:href="#check"></use>
+								</svg>
+								<span>Гарантия конфиденциальности</span>
+							</p>
+
+							<button type="button" data-popup=".popup-1" class="intro__help">Получить помощь <br> в&nbsp;подборе
+								услуги</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch-once data-watch class="section about">
+				<div class="about__container">
+					<div class="about__body">
+						<div class="about__content">
+							<h2 class="section__title about__title">Нумерология — <br> ключ к счастью!</h2>
+							<p class="about__desc">
+								Узнать себя никогда не поздно. Я использую 6 методик для расчета точного и объективного результата.
+								Идите вперед, к цели, любви и гармонии, к счастью, личностному и карьерному росту. Без волшебства,
+								чудес и магии. Без лекарств и ложных надежд”.
+							</p>
+
+							<div class="about__author">
+								<h4>Анна поль</h4>
+								<p>Практикующий Нумеролог, <br> консультант, автор статей, тренингов. </p>
+							</div>
+						</div>
+						<div class="about__img">
+							<picture><source srcset="img/about/about-img.webp" type="image/webp"><img src="img/about/about-img.png" alt=""></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div data-watch data-watch-once class="list__container">
+				<ul class="list">
+					<li class="list__item">
+						<svg width="22" height="38" aria-hidden="true">
+							<use xlink:href="#mark"></use>
+						</svg>
+						<span>Запутались и не знаете, что делать?</span>
+					</li>
+					<li class="list__item">
+						<svg width="22" height="38" aria-hidden="true">
+							<use xlink:href="#mark"></use>
+						</svg>
+						<span>Желаете найти подход к родителям, детям, друзьям или бизнес-партнерам?</span>
+					</li>
+					<li class="list__item">
+						<svg width="22" height="38" aria-hidden="true">
+							<use xlink:href="#mark"></use>
+						</svg>
+						<span>Мечтаете сохранить брак или уберечь себя от измен и предательств?</span>
+					</li>
+
+					<li class="list__item">
+						<svg width="22" height="38" aria-hidden="true">
+							<use xlink:href="#mark"></use>
+						</svg>
+						<span>Хотите найти себя или вторую половинку?</span>
+					</li>
+					<li class="list__item">
+						<svg width="22" height="38" aria-hidden="true">
+							<use xlink:href="#mark"></use>
+						</svg>
+						<span>Раздумываете об открытии нового проекта или направления?
+						</span>
+					</li>
+					<li class="list__item">
+						<svg width="22" height="38" aria-hidden="true">
+							<use xlink:href="#mark"></use>
+						</svg>
+						<span>Планируете смену места жительства, учебы или работы?</span>
+					</li>
+				</ul>
+			</div>
+			<section data-watch-once data-watch class="section feedback">
+				<div class="feedback__container">
+
+					<div class="feedback__body">
+
+						<div class="feedback__content">
+							<h2 class="section__title feedback__title">Ваша судьба <br> в&nbsp;ваших руках</h2>
+							<p class="feedback__text">Звоните или оставляйте заявку на&nbsp;консультацию. Нумерология быстро
+								и&nbsp;четко ответит на&nbsp;все&nbsp;вопросы.</p>
+
+							<a href="tel:+380973008111" class="feedback__phone">+380 97 300 8111</a>
+							<a href="" class="feedback__link">Перезвоните мне</a>
+						</div>
+
+						<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="form feedback__form">
+							<div class="form__row">
+								<input autocomplete="off" type="text" name="name" data-required placeholder="Ваше имя" class="input">
+							</div>
+							<div class="form__row">
+								<input autocomplete="off" type="tel" name="phone" data-required placeholder="+380 (99) 999-99-99" class="input">
+							</div>
+							<div class="form__row">
+								<textarea name="message" data-autoheight class="textarea" placeholder="Кратко опишите проблему или вопрос"></textarea>
+							</div>
+							<div class="form__row">
+								<button type="submit" class="form__button button">отправить заявку</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</section>
+			<section data-watch-once data-watch class="section services">
+				<div class="services__container">
+					<div class="services__head">
+						<h2 class="section__title services__title">Услуги</h2>
+
+						<p class="services__text">* Для точного результата услуги 5, 6, 7, 8, 9, 10, <br>
+							нужны расчеты услуги 2.</p>
+					</div>
+
+					<div data-spollers data-one-spoller class="services__acordion">
+						<div class="services__acordion-item acordion-item">
+							<button type="button" data-spoller class="acordion-item__title">
+								<span>1. Помощь нумеролога</span>
+
+								<div class="acordion-item__price">60 мин —1000 грн</div>
+								<i class="acordion-item__icon">+</i>
+							</button>
+							<div class="acordion-item__body">
+								<div class="acordion-item__content">
+									Обсудите любой интересующий вопрос с нумерологом
+
+									<button type="button" class="acordion-item__button button">Заказать</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__acordion-item acordion-item">
+							<button type="button" data-spoller class="acordion-item__title">
+								<span>2. Узнайте себя и свои возможности</span>
+
+								<div class="acordion-item__price">1000 грн</div>
+								<i class="acordion-item__icon">+</i>
+							</button>
+							<div class="acordion-item__body">
+								<div class="acordion-item__content">
+
+
+									<h4>В услугу входит определение:</h4>
+
+									<ul class="acordion-item__list">
+										<li>характера, самооценки, темперамента;
+										</li>
+										<li>сильных и слабых сторон, интересов, талантов;
+										</li>
+										<li>жизненных задач, миссии, предназначения;
+										</li>
+										<li>потенциала богатства, отношения к деньгам;
+										</li>
+										<li>карьеры, бизнеса и профориентации;
+										</li>
+										<li>энергетического потенциала, источников энергии;
+										</li>
+										<li>кармических задач;
+										</li>
+										<li>подсознательных блоков и страхов;
+										</li>
+										<li>этапов жизненного пути;
+										</li>
+										<li>отношения к семье и браку.
+										</li>
+									</ul>
+
+									<button type="button" class="acordion-item__button button">Заказать</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__acordion-item acordion-item">
+							<button type="button" data-spoller class="acordion-item__title">
+								<span>3. Совместимость в любви</span>
+
+								<div class="acordion-item__price">700 грн</div>
+								<i class="acordion-item__icon">+</i>
+							</button>
+							<div class="acordion-item__body">
+								<div class="acordion-item__content">
+
+									<div class="acordion-item__inner">
+										<div class="acordion-item__group">
+											<h4>В услугу входит определение по:</h4>
+
+											<ul class="acordion-item__list">
+												<li>энергетике;
+												</li>
+												<li>темпераменту;
+												</li>
+												<li>характеру – кто главный?;
+												</li>
+												<li>духовной составляющей;
+												</li>
+												<li>семейным характеристикам.
+												</li>
+											</ul>
+										</div>
+										<div class="acordion-item__group">
+											<h4>Также вы узнаете:</h4>
+
+											<ul class="acordion-item__list">
+												<li>тип совместимости и правила отношений;
+												</li>
+												<li>прогноз развития отношений;
+												</li>
+												<li>причины конфликтов и точек соприкосновения;
+												</li>
+												<li>риск развода или измен;
+												</li>
+												<li>кармичность отношений: какой ваш урок?;
+												</li>
+												<li>возможность рождения детей.</li>
+											</ul>
+										</div>
+									</div>
+
+
+									<button type="button" class="acordion-item__button button">Заказать</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__acordion-item acordion-item">
+							<button type="button" data-spoller class="acordion-item__title">
+								<span>4. Совместимость с родными, в работе, дружбе</span>
+
+								<div class="acordion-item__price">700 грн</div>
+								<i class="acordion-item__icon">+</i>
+							</button>
+							<div class="acordion-item__body">
+								<div class="acordion-item__content">
+
+									<div class="acordion-item__inner">
+										<div class="acordion-item__group">
+											<h4>В услугу входит определение по:</h4>
+
+											<ul class="acordion-item__list">
+												<li>энергетике;
+												</li>
+												<li>темпераменту;
+												</li>
+												<li>характеру – кто главный?;
+												</li>
+											</ul>
+										</div>
+										<div class="acordion-item__group">
+											<h4>Также вы узнаете:</h4>
+
+											<ul class="acordion-item__list">
+												<li>тип совместимости и правила отношений;
+												</li>
+												<li>прогноз развития отношений;
+												</li>
+												<li>кармичность отношений: какой ваш урок?;
+												</li>
+
+											</ul>
+										</div>
+									</div>
+
+									<button type="button" class="acordion-item__button button">Заказать</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__acordion-item acordion-item">
+							<button type="button" data-spoller class="acordion-item__title">
+								<span>5. Вы, бизнес & деньги</span>
+
+								<div class="acordion-item__price">700 грн</div>
+								<i class="acordion-item__icon">+</i>
+							</button>
+							<div class="acordion-item__body">
+								<div class="acordion-item__content">
+
+
+									<h4>В услугу входит определение:</h4>
+
+									<ul class="acordion-item__list">
+										<li>определение прибыльных видов деятельности и периодов реализации;
+										</li>
+										<li>подбор квалифицированных кадров;
+										</li>
+										<li>выбор названия компании, фирмы, бренда, нового проекта;
+										</li>
+										<li>определение наилучшего периода для инвестирования.
+										</li>
+									</ul>
+
+									<button type="button" class="acordion-item__button button">Заказать</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__acordion-item acordion-item">
+							<button type="button" data-spoller class="acordion-item__title">
+								<span>6. Выбор даты</span>
+
+								<div class="acordion-item__price">700 грн</div>
+								<i class="acordion-item__icon">+</i>
+							</button>
+							<div class="acordion-item__body">
+								<div class="acordion-item__content">
+
+									Выбор даты для важного события <br> из предлагаемых 5 вариантов
+
+									<button type="button" class="acordion-item__button button">Заказать</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__acordion-item acordion-item">
+							<button type="button" data-spoller class="acordion-item__title">
+								<span>7. Откройте новые возможности</span>
+
+								<div class="acordion-item__price">30мин - 700 грн</div>
+								<i class="acordion-item__icon">+</i>
+							</button>
+							<div class="acordion-item__body">
+								<div class="acordion-item__content">
+
+									Коррекция судьбы по ФИО/ <br>изменение имени, фамилии
+
+									<button type="button" class="acordion-item__button button">Заказать</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__acordion-item acordion-item">
+							<button type="button" data-spoller class="acordion-item__title">
+								<span>8. Какой период лучше</span>
+
+								<div class="acordion-item__price">20мин - 500 грн</div>
+								<i class="acordion-item__icon">+</i>
+							</button>
+							<div class="acordion-item__body">
+								<div class="acordion-item__content">
+
+									Прогноз покупки, бизнеса, <br> путешествий, отношений, инвестиций
+
+									<button type="button" class="acordion-item__button button">Заказать</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__acordion-item acordion-item">
+							<button type="button" data-spoller class="acordion-item__title">
+								<span>9. Какая страна подходит</span>
+
+								<div class="acordion-item__price">20мин - 500 грн</div>
+								<i class="acordion-item__icon">+</i>
+							</button>
+							<div class="acordion-item__body">
+								<div class="acordion-item__content">
+
+									Эмиграция, смена <br> места жительства
+
+									<button type="button" class="acordion-item__button button">Заказать</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__acordion-item acordion-item">
+							<button type="button" data-spoller class="acordion-item__title">
+								<span>10. Здоровье</span>
+
+								<div class="acordion-item__price">20мин - 500 грн</div>
+								<i class="acordion-item__icon">+</i>
+							</button>
+							<div class="acordion-item__body">
+								<div class="acordion-item__content">
+
+									Здоровье & предрасположенность <br> к болезням
+
+									<button type="button" class="acordion-item__button button">Заказать</button>
+								</div>
+							</div>
+						</div>
+
+						<div class="services__acordion-item acordion-item">
+							<button type="button" data-spoller class="acordion-item__title">
+								<span>11. Подбор имени ребенку</span>
+
+								<div class="acordion-item__price">30мин - 700 грн</div>
+								<i class="acordion-item__icon">+</i>
+							</button>
+							<div class="acordion-item__body">
+								<div class="acordion-item__content">
+
+									Подбор имени ребенку <br> из предлагаемых 5 вариантов
+
+									<button type="button" class="acordion-item__button button">Заказать</button>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section data-watch-once data-watch class="section gift">
+				<div class="gift__container">
+					<div class="gift__body">
+						<h2 class="section__title gift__title">
+							ВсЁ о детях — БЕСПЛАТНО
+						</h2>
+
+						<div class="gift__group">
+							<p class="gift__text">При заказе нумерологической карты все услуги, связанные с детьми вы
+								получаете
+								бесплатно!</p>
+
+							<button type="button" data-popup=".popup-2" class="gift__button button">получить подарок</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch-once data-watch class="section matrix">
+				<div class="matrix__container">
+					<div class="matrix__body">
+						<div class="matrix__left">
+							<h2 class="section__title matrix__title">Расчёт вашей психоматрицы</h2>
+							<p class="matrix__text">Введите свою дату рождения и рассчитайте свою психоматрицу. Узнайте кто вы, что
+								можете и на что
+								действительно способны!</p>
+							<input name="birthday" maxlength="10" placeholder="00.00.0000" class="input matrix__input">
+							<button type="button" class="button matrix__button birthday-btn">расчитать матрицу</button>
+						</div>
+						<div class="matrix__right">
+							<div class="matrix__result">
+								<div class="matrix__result-group">
+									<div class="matrix__result-group-item">
+										Число сущности: <div class="matrix__item-sush ">-
+											<span class="sush"></span>
+										</div>
+									</div>
+									<div class="matrix__result-group-item">
+										Дополнительные числа: <div class="matrix__item-add ">- <span class="additionnumb"></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="matrix__item "><span class="addpr_8">-</span>Темперамент</div>
+								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"> <span class="basicpr_1">-</span>Характер </div>
+								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_4">-</span>Здоровье </div>
+								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_7">-</span>Удача</div>
+								<div class="matrix__item "><span class="addpr_4">-</span>Цель</div>
+								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_7">-</span>Энергия</div>
+								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_7">-</span>Логика</div>
+								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_8">-</span>Долг</div>
+								<div class="matrix__item"><span class="addpr_5">-</span>Семья</div>
+
+								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_3">-</span>Интерес</div>
+								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_6">-</span>Труд</div>
+								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_9">-</span>Память</div>
+								<div class="matrix__item"><span class="addpr_6">-</span>Привычки</div>
+								<div class="matrix__item"><span class="addpr_1">-</span>Самооценка</div>
+								<div class="matrix__item"><span class="addpr_2">-</span>Работа</div>
+								<div class="matrix__item"><span class="addpr_3">-</span>Талант</div>
+								<div class="matrix__item"><span class="addpr_7">-</span>Дух</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section data-watch-once data-watch class="section meanings">
+				<div class="meanings__container">
+					<h2 class="section__title meanings__title">ОБЩИЕ ЗНАЧЕНИЯ ПСИХОМАТРИЦЫ</h2>
+
+					<div class="meanings__body">
+
+						<div class="meanings__col">
+							<div class="meanings__item">
+								<h3 class="meanings__item-title">Цифра «1» – Характер</h3>
+								<p class="meanings__item-desc">
+									Сила воли и характера человека, стремление к власти, лидерские качества, уникальность.
+									Волевые качества имеют первостепенное значение для жизни во всех ее ипостасях: личной,
+									общественной,
+									профессиональной.
+									Чем меньше единиц, тем эгоистичнее человек, чем их больше – тем больше в характере воли и
+									жесткости.
+									В минусе - эгоизм, гордыня, одиночество.
+								</p>
+							</div>
+
+							<div class="meanings__item">
+								<h3 class="meanings__item-title">Цифра «2» – Энергия</h3>
+								<p class="meanings__item-desc">
+									Энергия человека, которую он направляет на общение с окружающими, саморазвитие, принятие
+									решений,
+									достижение целей, физическая активность и так далее.
+									Если нет двоек, то личность эта слабая, она в поиске дополнительной энергии и поглощает энергию
+									других, а если двоек много – щедро делится энергией, но жестко отстаивает свои интересы и
+									быстрее
+									добивается своей цели.
+								</p>
+							</div>
+
+							<div class="meanings__item">
+								<h3 class="meanings__item-title">Цифра «3» – Интерес</h3>
+								<p class="meanings__item-desc">
+									Интерес, любопытство, знания, научные склонности.
+									Познавательный потенциал человека, его интерес к технике и разного рода наукам: точные – физика,
+									математика, технические дисциплины; утилитарные, предполагающим узко специальное применение;
+									гуманитарные.
+									Чем меньше троек, тем меньше интересов или они не стабильные.
+									Чем больше троек – тем активнее желание узнать много обо всем.
+								</p>
+							</div>
+						</div>
+
+						<div class="meanings__col">
+							<div class="meanings__item">
+								<h3 class="meanings__item-title">Цифра «4» – Здоровье</h3>
+								<p class="meanings__item-desc">
+									Физическая сила, работоспособность, выносливость, привлекательность.
+									Явные или скрытые проблемы со здоровьем. Здоровье в потенциале изначально, а не состояние его на
+									текущий момент.
+									Также это способность обучать и передавать информацию, устойчивость личности к раздражителям,
+									последовательность в достижении поставленных целей и умение организовать себя и пространство
+									вокруг.
+								</p>
+							</div>
+							<div class="meanings__item">
+								<h3 class="meanings__item-title">Цифра «5» – Логика</h3>
+								<p class="meanings__item-desc">
+									Интуиция человека и его способности мыслить логически, умение планировать, анализировать,
+									строить планы, разбираться в точных науках. Однако, учитывая положение этой цифры в
+									психоматрице, логика не может рассматриваться сама по себе, без учета влияния остальных
+									показателей.
+								</p>
+							</div>
+							<div class="meanings__item">
+								<h3 class="meanings__item-title">Цифра «6» – Трудоспособность</h3>
+								<p class="meanings__item-desc">
+									Способности к физическому труду, желание власти, умение зарабатывать деньги, прокормить семью,
+									мастерство.
+									Чем больше шестерок, тем больше стремления к материальному, если их нет, то это человек
+									искусства, творчества и физическая работа его мало интересует.
+									В минусе - стремление подчинять себе других, желание власти, злоба, жесткость.
+								</p>
+							</div>
+						</div>
+
+						<div class="meanings__col">
+							<div class="meanings__item">
+								<h3 class="meanings__item-title">Число «7» – Удача</h3>
+								<p class="meanings__item-desc">
+									Везение, удача, познание мира, себя и природы. Возможность раскрыть свой творческий потенциал.
+									Чем больше цифр, тем легче «поймать» удачу и разрыть свой талант. А если мало цифр, то
+									реализоваться придётся через подсказки и приложить большие усилий.
+								</p>
+							</div>
+							<div class="meanings__item">
+								<h3 class="meanings__item-title">Цифра «8» – Чувство долга</h3>
+								<p class="meanings__item-desc">
+									Чувство долга, терпимость и доброта, отношение к родителям, семье, ответственность. Можно
+									назвать это ответственностью, можно – порядочностью.
+									Если восьмерок слишком много, речь идет о человеке очень склонном к контролю,
+									гиперответственности и обостренном чувстве справедливости. А когда их нет – о том, кто живет,
+									как ему хочется и для себя. Его легко вывести из себя.
+								</p>
+							</div>
+							<div class="meanings__item">
+								<h3 class="meanings__item-title">Цифра «9» – Память</h3>
+								<p class="meanings__item-desc">
+									Память, знания, способность к ясновидению, дар пророчества. Индекс способности к анализу на
+									основе памяти и элементарной рассудительности.
+									Много девяток – практически гениальность, и в тоже время горе от ума и обидчивость, мало девяток
+									– не придает особого значения знаниям, забывчив, но быстро отходчив.
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<button type="button" data-popup=".popup-3" class="meanings__button button">ИНДИВИДУАЛЬНЫЙ РАСЧЕТ</button>
+				</div>
+			</section>
+			<section data-watch-once data-watch class="section consult">
+				<div class="consult__container">
+					<h2 class="section__title consult__title">ИЗМЕНИТЕ СВОЮ ЖИЗНЬ. <br> ЗАПИШИТЕСЬ НА КОНСУЛЬТАЦИЮ</h2>
+
+					<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="form consult__form">
+						<div class="form__row consult__form-row">
+							<label for="name">Ваше имя*</label>
+							<input id="name" autocomplete="off" type="text" data-required name="name" placeholder="Марина" class="input consult__form-input">
+						</div>
+						<div class="form__row consult__form-row">
+							<label for="name">Номер телефона*</label>
+							<input id="name" autocomplete="off" type="tel" data-required name="phone" placeholder="+380 (99) 999-99-99" class="input consult__form-input">
+						</div>
+
+						<button type="submit" class="form__button consult__form-button button">отправить заявку</button>
+
+					</form>
+				</div>
+			</section>
+			<section data-watch-once data-watch class="section contacts">
+				<div class="contacts__container">
+
+					<div class="contacts__body">
+						<div class="contacts__img">
+							<picture><source srcset="img/contacts/contacts-img.webp" type="image/webp"><img src="img/contacts/contacts-img.jpg" alt=""></picture>
+						</div>
+						<div class="contacts__content">
+							<h2 class="section__title contacts__title">СВЯЖИТЕСЬ СО МНОЙ</h2>
+
+							<div class="contacts__group">
+								<div class="contacts__item df">
+									<a href="tel:+380973008111" class="contacts__item-phone">+380 97 300 8111</a>
+
+									<div class="">
+										<a href="mailto:anna.numerolog.cv@gmail.com" class="contacts__item-email">anna.numerolog.cv@gmail.com</a>
+
+										<div class="contacts__social">
+											<a href="https://www.instagram.com/annapol_numerolog/" class="contacts__social-link">
+												<svg aria-hidden="true">
+													<use xlink:href="#inst"></use>
+												</svg>
+											</a>
+											<a href="https://www.facebook.com/profile.php?id=100053703644340" class="contacts__social-link">
+												<svg aria-hidden="true">
+													<use xlink:href="#fb"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+								<div class="contacts__item">
+									<p>Также я принимаю клиентов очно по адресу:</p>
+									<a href="https://goo.gl/maps/4PLeoGpuRs5Vb4Di8" class="contacts__item-location">г. Черновцы</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup-1 popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">+</button>
+				<div class="popup__bg">
+				</div>
+				<div class="popup__body">
+					<h2 class="popup__title">Измени свою жизнь</h2>
+
+					<p class="popup__text">Запишись на консультацию</p>
+
+					<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="form popup__form">
+						<div class="form__row popup__form-row">
+							<label for="name">Ваше имя*</label>
+							<input id="name" autocomplete="off" type="text" data-required name="name" placeholder="Марина" class="input popup__form-input">
+						</div>
+						<div class="form__row popup__form-row">
+							<label for="name">Номер телефона*</label>
+							<input id="name" autocomplete="off" type="tel" data-required name="phone" placeholder="+380 (99) 999-99-99" class="input popup__form-input">
+						</div>
+
+						<button type="submit" class="form__button popup__form-button button">отправить заявку</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup" aria-hidden="true" class="popup-2 popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">+</button>
+				<div class="popup__bg">
+				</div>
+				<div class="popup__body">
+					<h2 class="popup__title">Получите подарок</h2>
+
+					<p class="popup__text">Закажите нумерологическую карту и&nbsp;получите все услуги для&nbsp;вашего
+						ребенка совершенно бесплатно!</p>
+
+					<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="form popup__form">
+						<div class="form__row popup__form-row">
+							<label for="name">Ваше имя*</label>
+							<input id="name" autocomplete="off" type="text" data-required name="name" placeholder="Марина" class="input popup__form-input">
+						</div>
+						<div class="form__row popup__form-row">
+							<label for="name">Номер телефона*</label>
+							<input id="name" autocomplete="off" type="tel" data-required name="phone" placeholder="+380 (99) 999-99-99" class="input popup__form-input">
+						</div>
+
+						<button type="submit" class="form__button popup__form-button button">Забрать подарок</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="popup" aria-hidden="true" class="popup-3 popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">+</button>
+				<div class="popup__bg">
+				</div>
+				<div class="popup__body">
+					<h2 class="popup__title">Получить расшифровку</h2>
+
+					<p class="popup__text">Закажите анализ вашей психоматрицы и получите подробный психологический портрет
+						личности</p>
+
+					<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="form popup__form">
+						<div class="form__row popup__form-row">
+							<label for="name">Ваше имя*</label>
+							<input id="name" autocomplete="off" type="text" data-required name="name" placeholder="Марина" class="input popup__form-input">
+						</div>
+						<div class="form__row popup__form-row">
+							<label for="name">Номер телефона*</label>
+							<input id="name" autocomplete="off" type="tel" data-required name="phone" placeholder="+380 (99) 999-99-99" class="input popup__form-input">
+						</div>
+
+						<button type="submit" class="form__button popup__form-button button">Забрать подарок</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220609213755" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="js/app.min.js?_v=20220609213755"></script>
+</body>
+
+</html>
