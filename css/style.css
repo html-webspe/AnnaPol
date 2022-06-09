@@ -1111,7 +1111,7 @@ body::after {
 
 .contacts {
   background-color: #d8ab61;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .contacts__body {
@@ -1914,7 +1914,7 @@ body::after {
   }
 
   .menu__list {
-    margin-bottom: 100%;
+    margin-bottom: 130px;
   }
 
   .menu__item:not(:last-child) {
