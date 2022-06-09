@@ -1394,6 +1394,10 @@ body::after {
     padding-right: 16px;
   }
 
+  .header__social {
+    display: none;
+  }
+
   .menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
