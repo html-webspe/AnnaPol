@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Страница благодарности</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<style>
+		* {
+			padding: 0px;
+			margin: 0px;
+			border: 0px;
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: border-box;
+		}
+
+		html,
+		body {
+			height: 100%;
+			min-width: 320px;
+		}
+
+		body {
+			-ms-text-size-adjust: 100%;
+			-moz-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+		}
+
+		button {
+			cursor: pointer;
+			color: inherit;
+			background-color: inherit;
+		}
+
+		a {
+			color: inherit;
+		}
+
+		a:link,
+		a:visited {
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: none;
+		}
+
+		ul li {
+			list-style: none;
+		}
+
+		img {
+			vertical-align: top;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-weight: inherit;
+			font-size: inherit;
+		}
+
+		body {
+			font-family: "OpenSans";
+			font-size: 1.125rem;
+			font-weight: 500;
+			line-height: 1.5;
+			color: #fff;
+			background-color: #f8eee2;
+		}
+
+		@font-face {
+			font-family: OpenSans;
+			font-display: swap;
+			src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+			font-weight: 700;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: OpenSans;
+			font-display: swap;
+			src: url("fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
+			font-weight: 300;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: OpenSans;
+			font-display: swap;
+			src: url("fonts/OpenSans-Medium.woff2") format("woff2"), url("../fonts/OpenSans-Medium.woff") format("woff");
+			font-weight: 500;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: OpenSans;
+			font-display: swap;
+			src: url("fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+			font-weight: 400;
+			font-style: normal;
+		}
+
+		@font-face {
+			font-family: Philosopher;
+			font-display: swap;
+			src: url("fonts/Philosopher-bold.woff2") format("woff2"), url("../fonts/Philosopher-bold.woff") format("woff");
+			font-weight: 700;
+			font-style: normal;
+		}
+
+
+		.wrapper {
+			min-height: 100%;
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+		}
+
+
+		.thanks-title {
+			font-size: 52px;
+			line-height: 64px;
+			margin-bottom: 40px;
+			color: #4b3806;
+			text-align: center;
+		}
+
+		@media (max-width:982px) {
+			.thanks-title {
+				font-size: 42px;
+				line-height: 48px;
+			}
+		}
+
+		@media (max-width:600px) {
+			.thanks-title {
+				font-size: 32px;
+				line-height: 38px;
+			}
+		}
+
+
+		.thanks-text {
+			font-size: 16px;
+			line-height: 22px;
+			margin-bottom: 30px;
+			max-width: 560px;
+			color: #4b3806;
+			text-align: center;
+
+		}
+
+		@media (max-width:600px) {
+			.thanks-text {
+				font-size: 12px;
+				line-height: 18px;
+			}
+		}
+
+		.main-thanks {
+			display: flex;
+			flex-direction: column;
+			justify-self: center;
+			align-items: center;
+			flex: 1 1 auto;
+			padding: 100px 16px;
+		}
+
+		.main-thanks__links {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			gap: 10px;
+		}
+
+		@media (max-width: 1200px) {
+			.main-thanks__links {
+				max-width: 540px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		@media (max-width: 982px) {
+			.main-thanks__links {
+				max-width: 360px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+
+		.main-thanks__link {
+			position: relative;
+			width: 265px;
+			height: 265px;
+		}
+
+
+		@media (max-width: 982px) {
+			.main-thanks__link {
+				flex: 0 0 calc(50% - 5px);
+				height: 176px;
+			}
+		}
+
+		.main-thanks__link img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.main-thanks__overlay {
+
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #000;
+			opacity: 0;
+		}
+
+		.main-thanks__link-text {
+			position: absolute;
+			right: 0;
+			left: 0;
+			top: 50%;
+			padding: 0 30px;
+			margin-top: -30px;
+			color: #fff;
+			text-align: center;
+			transform: translateY(40%);
+			transition: transform 0.2s linear;
+			opacity: 0;
+			font-size: 12px;
+			z-index: 1;
+		}
+
+		.main-thanks__link:hover .main-thanks__link-text {
+			transform: translateY(0);
+			opacity: 1;
+		}
+
+		.main-thanks__link:hover .main-thanks__overlay {
+			opacity: 0.8;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<main class="main-thanks">
+			<h1 class="thanks-title">Спасибо за заявку!</h1>
+
+			<p class="thanks-text">Пока вы ждете звонка, заходите в мой инстаграм. Там вы найдете много полезной и
+				интересной информации о нумерологии</p>
+
+			<div class="main-thanks__links">
+				<a href="https://www.instagram.com/p/CbPtctLoAIs/" target="_blank" class="main-thanks__link">
+					<picture><source srcset="img/thanks/01.webp" type="image/webp"><img src="img/thanks/01.jpg" alt=""></picture>
+
+					<p class="main-thanks__link-text">@annapol_numerolog: Дитяча небесна сотня тримає небо України.
+						Серце розривається.😢😢😢</p>
+					<div class="main-thanks__overlay"></div>
+				</a>
+				<a href="https://www.instagram.com/p/CauHZL1IAYE/" target="_blank" class="main-thanks__link">
+					<picture><source srcset="img/thanks/02.webp" type="image/webp"><img src="img/thanks/02.jpg" alt=""></picture>
+					<p class="main-thanks__link-text">@annapol_numerolog: Смена места жительства, эмиграция, временный
+						переезд в другую страну!🇺🇦➡️🇹🇩🇵🇱🇱🇹🇩🇪🇮🇹...
+						В это ...</p>
+					<div class="main-thanks__overlay"></div>
+				</a>
+				<a href="https://www.instagram.com/p/CacTauTIFqY/" target="_blank" class="main-thanks__link">
+					<picture><source srcset="img/thanks/03.webp" type="image/webp"><img src="img/thanks/03.jpg" alt=""></picture>
+					<p class="main-thanks__link-text">@annapol_numerolog: </p>
+					<div class="main-thanks__overlay"></div>
+				</a>
+				<a href="https://www.instagram.com/p/CaXQOEvoItw/" target="_blank" class="main-thanks__link">
+					<picture><source srcset="img/thanks/04.webp" type="image/webp"><img src="img/thanks/04.jpg" alt=""></picture>
+					<p class="main-thanks__link-text">@annapol_numerolog: </p>
+					<div class="main-thanks__overlay"></div>
+				</a>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>

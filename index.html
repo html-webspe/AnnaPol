@@ -6,16 +6,16 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220609221807">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220614142848">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-	<div id="preloader">
+	<!--<div id="preloader">
 		<div class="dws-progress-bar"></div>
-	</div>
+	</div>-->
 	<div class="wrapper">
 		<svg viewBox="0 0 60 59" fill="none" style="height:0px">
 			<symbol id="logo">
@@ -69,11 +69,12 @@
 				<div class="header__menu menu">
 					<nav class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">Обо мне</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Бесплатный рассчёт психоматрицы</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Услуги</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
+							<li class="menu__item"><a href="" data-goto-header data-goto=".about" class="menu__link">Обо мне</a>
+							</li>
+							<li class="menu__item"><a href="" data-goto-header data-goto=".services" class="menu__link">Услуги</a></li>
+							<li class="menu__item"><a href="" data-goto-header data-goto=".matrix" class="menu__link">Бесплатный
+									рассчёт психоматрицы</a></li>
+							<li class="menu__item"><a href="" data-goto-header data-goto=".contacts" class="menu__link">Контакты</a></li>
 						</ul>
 						<a href="+380973008111" class="menu__tel">+38 097 300 81 11</a>
 						<div class="header__social">
@@ -89,7 +90,7 @@
 							</a>
 						</div>
 					</nav>
-					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<button type="button" class="menu__icon icon-menu"><span></span><span></span></button>
 				</div>
 
 				<div class="header__lang lang" data-da=".menu__body, 767.98, last">
@@ -200,15 +201,17 @@
 								и&nbsp;четко ответит на&nbsp;все&nbsp;вопросы.</p>
 
 							<a href="tel:+380973008111" class="feedback__phone">+380 97 300 8111</a>
-							<a href="" class="feedback__link">Перезвоните мне</a>
+							<a href="" data-popup=".popup-4" class="feedback__link">Перезвоните мне</a>
 						</div>
 
 						<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="form feedback__form">
+							<input type="hidden" name="subject" value="Перезвоните мне" class="input">
+
 							<div class="form__row">
 								<input autocomplete="off" type="text" name="name" data-required placeholder="Ваше имя" class="input">
 							</div>
 							<div class="form__row">
-								<input autocomplete="off" type="tel" name="phone" data-required placeholder="+380 (99) 999-99-99" class="input">
+								<input autocomplete="off" type="tel" name="phone" data-required placeholder="(99) 999-99-99" class="input">
 							</div>
 							<div class="form__row">
 								<textarea name="message" data-autoheight class="textarea" placeholder="Кратко опишите проблему или вопрос"></textarea>
@@ -242,7 +245,7 @@
 								<div class="acordion-item__content">
 									Обсудите любой интересующий вопрос с нумерологом
 
-									<button type="button" class="acordion-item__button button">Заказать</button>
+									<button data-popup=".popup-1" type="button" class="acordion-item__button button">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -283,7 +286,7 @@
 										</li>
 									</ul>
 
-									<button type="button" class="acordion-item__button button">Заказать</button>
+									<button data-popup=".popup-1" type="button" class="acordion-item__button button">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -335,7 +338,7 @@
 									</div>
 
 
-									<button type="button" class="acordion-item__button button">Заказать</button>
+									<button data-popup=".popup-1" type="button" class="acordion-item__button button">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -378,7 +381,7 @@
 										</div>
 									</div>
 
-									<button type="button" class="acordion-item__button button">Заказать</button>
+									<button data-popup=".popup-1" type="button" class="acordion-item__button button">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -407,7 +410,7 @@
 										</li>
 									</ul>
 
-									<button type="button" class="acordion-item__button button">Заказать</button>
+									<button data-popup=".popup-1" type="button" class="acordion-item__button button">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -424,7 +427,7 @@
 
 									Выбор даты для важного события <br> из предлагаемых 5 вариантов
 
-									<button type="button" class="acordion-item__button button">Заказать</button>
+									<button data-popup=".popup-1" type="button" class="acordion-item__button button">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -441,7 +444,7 @@
 
 									Коррекция судьбы по ФИО/ <br>изменение имени, фамилии
 
-									<button type="button" class="acordion-item__button button">Заказать</button>
+									<button data-popup=".popup-1" type="button" class="acordion-item__button button">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -458,7 +461,7 @@
 
 									Прогноз покупки, бизнеса, <br> путешествий, отношений, инвестиций
 
-									<button type="button" class="acordion-item__button button">Заказать</button>
+									<button data-popup=".popup-1" type="button" class="acordion-item__button button">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -475,7 +478,7 @@
 
 									Эмиграция, смена <br> места жительства
 
-									<button type="button" class="acordion-item__button button">Заказать</button>
+									<button data-popup=".popup-1" type="button" class="acordion-item__button button">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -492,7 +495,7 @@
 
 									Здоровье & предрасположенность <br> к болезням
 
-									<button type="button" class="acordion-item__button button">Заказать</button>
+									<button data-popup=".popup-1" type="button" class="acordion-item__button button">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -509,7 +512,7 @@
 
 									Подбор имени ребенку <br> из предлагаемых 5 вариантов
 
-									<button type="button" class="acordion-item__button button">Заказать</button>
+									<button data-popup=".popup-1" type="button" class="acordion-item__button button">Заказать</button>
 								</div>
 							</div>
 						</div>
@@ -525,7 +528,7 @@
 						</h2>
 
 						<div class="gift__group">
-							<p class="gift__text">При заказе нумерологической карты все услуги, связанные с детьми вы
+							<p class="gift__text">При заказе нумерологической карты все услуги, связанные с детьми до 16 лет вы
 								получаете
 								бесплатно!</p>
 
@@ -542,44 +545,51 @@
 							<p class="matrix__text">Введите свою дату рождения и рассчитайте свою психоматрицу. Узнайте кто вы, что
 								можете и на что
 								действительно способны!</p>
-							<input name="birthday" maxlength="10" placeholder="00.00.0000" class="input matrix__input">
+							<input name="birthday" maxlength="10" placeholder="00.00.0000" class="matrix__input">
 							<button type="button" class="button matrix__button birthday-btn">расчитать матрицу</button>
 						</div>
 						<div class="matrix__right">
 							<div class="matrix__result">
-								<div class="matrix__result-group">
-									<div class="matrix__result-group-item">
-										Число сущности: <div class="matrix__item-sush ">-
-											<span class="sush"></span>
+								<div class="matrix__result-row">
+									<div class="matrix__result-group" data-da=".matrix__right, 600.0, last">
+										<div class="matrix__result-group-item">
+											Число сущности: <div class="matrix__item-sush ">-<span class="sush"></span>
+											</div>
+										</div>
+										<div class="matrix__result-group-item">
+											Дополнительные числа: <div class="matrix__item-add ">- <span class="additionnumb"></span>
+											</div>
 										</div>
 									</div>
-									<div class="matrix__result-group-item">
-										Дополнительные числа: <div class="matrix__item-add ">- <span class="additionnumb"></span>
-										</div>
-									</div>
+
+									<div class="matrix__item "><span class="addpr_8">-</span>Темперамент</div>
 								</div>
-
-								<div class="matrix__item "><span class="addpr_8">-</span>Темперамент</div>
-								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"> <span class="basicpr_1">-</span>Характер </div>
-								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_4">-</span>Здоровье </div>
-								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_7">-</span>Удача</div>
-								<div class="matrix__item "><span class="addpr_4">-</span>Цель</div>
-								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_7">-</span>Энергия</div>
-								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_7">-</span>Логика</div>
-								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_8">-</span>Долг</div>
-								<div class="matrix__item"><span class="addpr_5">-</span>Семья</div>
-
-								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_3">-</span>Интерес</div>
-								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_6">-</span>Труд</div>
-								<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_9">-</span>Память</div>
-								<div class="matrix__item"><span class="addpr_6">-</span>Привычки</div>
-								<div class="matrix__item"><span class="addpr_1">-</span>Самооценка</div>
-								<div class="matrix__item"><span class="addpr_2">-</span>Работа</div>
-								<div class="matrix__item"><span class="addpr_3">-</span>Талант</div>
-								<div class="matrix__item"><span class="addpr_7">-</span>Дух</div>
-
-
+								<div class="matrix__result-row">
+									<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"> <span class="basicpr_1">-</span>Характер </div>
+									<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_4">-</span>Здоровье </div>
+									<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_7">-</span>Удача</div>
+									<div class="matrix__item "><span class="addpr_4">-</span>Цель</div>
+								</div>
+								<div class="matrix__result-row">
+									<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_7">-</span>Энергия</div>
+									<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_7">-</span>Логика</div>
+									<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_8">-</span>Долг</div>
+									<div class="matrix__item"><span class="addpr_5">-</span>Семья</div>
+								</div>
+								<div class="matrix__result-row">
+									<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_3">-</span>Интерес</div>
+									<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_6">-</span>Труд</div>
+									<div class="matrix__item" style="background-color: rgba(224, 191, 134, 0.2);"><span class="basicpr_9">-</span>Память</div>
+									<div class="matrix__item"><span class="addpr_6">-</span>Привычки</div>
+								</div>
+								<div class="matrix__result-row">
+									<div class="matrix__item"><span class="addpr_1">-</span>Самооценка</div>
+									<div class="matrix__item"><span class="addpr_2">-</span>Работа</div>
+									<div class="matrix__item"><span class="addpr_3">-</span>Талант</div>
+									<div class="matrix__item"><span class="addpr_7">-</span>Дух</div>
+								</div>
 							</div>
+
 						</div>
 					</div>
 				</div>
@@ -702,13 +712,15 @@
 					<h2 class="section__title consult__title">ИЗМЕНИТЕ СВОЮ ЖИЗНЬ. <br> ЗАПИШИТЕСЬ НА КОНСУЛЬТАЦИЮ</h2>
 
 					<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="form consult__form">
+						<input type="hidden" name="subject" value="Запись на консультацию" class=" input">
+
 						<div class="form__row consult__form-row">
 							<label for="name">Ваше имя*</label>
 							<input id="name" autocomplete="off" type="text" data-required name="name" placeholder="Марина" class="input consult__form-input">
 						</div>
 						<div class="form__row consult__form-row">
-							<label for="name">Номер телефона*</label>
-							<input id="name" autocomplete="off" type="tel" data-required name="phone" placeholder="+380 (99) 999-99-99" class="input consult__form-input">
+							<label for="phone">Номер телефона*</label>
+							<input id="phone" autocomplete="off" type="tel" data-required name="phone" placeholder="(99) 999-99-99" class="input consult__form-input">
 						</div>
 
 						<button type="submit" class="form__button consult__form-button button">отправить заявку</button>
@@ -757,6 +769,7 @@
 
 				</div>
 			</section>
+
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -775,6 +788,8 @@
 					<p class="popup__text">Запишись на консультацию</p>
 
 					<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="form popup__form">
+						<input type="hidden" name="subject" value="Запись на консультацию" class=" input">
+
 						<div class="form__row popup__form-row">
 							<label for="name">Ваше имя*</label>
 							<input id="name" autocomplete="off" type="text" data-required name="name" placeholder="Марина" class="input popup__form-input">
@@ -805,13 +820,15 @@
 						ребенка совершенно бесплатно!</p>
 
 					<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="form popup__form">
+						<input type="hidden" name="subject" value="Получите подарок" class="input">
+
 						<div class="form__row popup__form-row">
-							<label for="name">Ваше имя*</label>
-							<input id="name" autocomplete="off" type="text" data-required name="name" placeholder="Марина" class="input popup__form-input">
+							<label for="name-1">Ваше имя*</label>
+							<input id="name-1" autocomplete="off" type="text" data-required name="name" placeholder="Марина" class="input popup__form-input">
 						</div>
 						<div class="form__row popup__form-row">
-							<label for="name">Номер телефона*</label>
-							<input id="name" autocomplete="off" type="tel" data-required name="phone" placeholder="+380 (99) 999-99-99" class="input popup__form-input">
+							<label for="phone-1">Номер телефона*</label>
+							<input id="phone-1" autocomplete="off" type="tel" data-required name="phone" placeholder="+380 (99) 999-99-99" class="input popup__form-input">
 						</div>
 
 						<button type="submit" class="form__button popup__form-button button">Забрать подарок</button>
@@ -835,13 +852,15 @@
 						личности</p>
 
 					<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="form popup__form">
+						<input type="hidden" name="subject" value="Получить расшифровку" class="input">
+
 						<div class="form__row popup__form-row">
-							<label for="name">Ваше имя*</label>
-							<input id="name" autocomplete="off" type="text" data-required name="name" placeholder="Марина" class="input popup__form-input">
+							<label for="name-2">Ваше имя*</label>
+							<input id="name-2" autocomplete="off" type="text" data-required name="name" placeholder="Марина" class="input popup__form-input">
 						</div>
 						<div class="form__row popup__form-row">
-							<label for="name">Номер телефона*</label>
-							<input id="name" autocomplete="off" type="tel" data-required name="phone" placeholder="+380 (99) 999-99-99" class="input popup__form-input">
+							<label for="name-2">Номер телефона*</label>
+							<input id="name-2" autocomplete="off" type="tel" data-required name="phone" placeholder="+380 (99) 999-99-99" class="input popup__form-input">
 						</div>
 
 						<button type="submit" class="form__button popup__form-button button">Забрать подарок</button>
@@ -851,8 +870,41 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220609221807" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-	<script src="js/app.min.js?_v=20220609221807"></script>
+
+	<div id="popup" aria-hidden="true" class="popup-4 popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">+</button>
+				<div class="popup__bg">
+				</div>
+				<div class="popup__body">
+					<h2 class="popup__title">Оставте свой номер</h2>
+
+					<p class="popup__text">и я свяжусь с вами в течение часа
+					</p>
+
+					<form data-ajax action="files/sendmail/sendmail.php" method="POST" class="form popup__form">
+						<input type="hidden" name="subject" value="Перезвоните мне" class="input">
+
+						<div class="form__row popup__form-row">
+							<label for="name-2">Ваше имя*</label>
+							<input id="name-2" autocomplete="off" type="text" data-required name="name" placeholder="Марина" class="input popup__form-input">
+						</div>
+						<div class="form__row popup__form-row">
+							<label for="name-2">Номер телефона*</label>
+							<input id="name-2" autocomplete="off" type="tel" data-required name="phone" placeholder="+380 (99) 999-99-99" class="input popup__form-input">
+						</div>
+
+						<button type="submit" class="form__button popup__form-button button">Перезвоните мне</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20220614142848" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<script src="js/app.min.js?_v=20220614142848"></script>
 </body>
 
 </html>

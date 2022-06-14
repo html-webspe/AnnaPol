@@ -22,32 +22,18 @@
 	*/
 
 	//От кого письмо
-	$mail->setFrom('from@gmail.com', 'Фрилансер по жизни'); // Указать нужный E-mail
+	$mail->setFrom('from@gmail.com'); // Указать нужный E-mail
 	//Кому отправить
-	$mail->addAddress('to@gmail.com'); // Указать нужный E-mail
+	$mail->addAddress('andreypbiz@gmail.com'); // Указать нужный E-mail
 	//Тема письма
-	$mail->Subject = 'Привет! Это "Фрилансер по жизни"';
+	$mail->Subject = $_POST['subject'];
 
 	//Тело письма
-	$body = '<h1>Встречайте супер письмо!</h1>';
+	if(trim(!empty($_POST['full_phone'])) && trim(!empty($_POST['name']))){
+		$body = "<p><b>Имя пользователя:</b> " . $_POST['name'] . "<br/></p>";
+	        $body.= '<p><b>Телефон:</b> '. $_POST['full_phone'] .'<br/></p>';
+	}	
 
-	//if(trim(!empty($_POST['email']))){
-		//$body.=$_POST['email'];
-	//}	
-	
-	/*
-	//Прикрепить файл
-	if (!empty($_FILES['image']['tmp_name'])) {
-		//путь загрузки файла
-		$filePath = __DIR__ . "/files/sendmail/attachments/" . $_FILES['image']['name']; 
-		//грузим файл
-		if (copy($_FILES['image']['tmp_name'], $filePath)){
-			$fileAttach = $filePath;
-			$body.='<p><strong>Фото в приложении</strong>';
-			$mail->addAttachment($fileAttach);
-		}
-	}
-	*/
 
 	$mail->Body = $body;
 
