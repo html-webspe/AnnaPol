@@ -1342,6 +1342,7 @@ body::after {
   line-height: 1;
   margin-bottom: 1.25rem;
   outline: 1px solid transparent;
+  max-width: 100%;
 }
 
 .matrix__input::-webkit-input-placeholder {
