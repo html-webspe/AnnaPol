@@ -1257,6 +1257,9 @@ body::after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .matrix__text {
@@ -1276,6 +1279,9 @@ body::after {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .matrix__item {
@@ -1328,9 +1334,6 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.matrix__result-group-item:not(:last-child) {
   margin-bottom: 0.625rem;
 }
 
@@ -1384,7 +1387,6 @@ body::after {
 .additionnumb {
   font-size: 1.5rem;
   font-weight: 500;
-  margin: 0 7px;
 }
 
 .birthday-btn {
@@ -3085,10 +3087,6 @@ body::after {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
-  .matrix__left {
-    margin-right: 40px;
-  }
 }
 
 @media (min-width: 61.99875em) {
@@ -3211,13 +3209,12 @@ body::after {
   }
 
   .matrix {
-    padding: 70px 0;
+    padding: 70px;
   }
 
-  .matrix__right {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 560px;
-            flex: 0 0 560px;
+  .matrix__left {
+    margin-right: 40px;
+    max-width: 40%;
   }
 
   .matrix__item {
@@ -3291,8 +3288,10 @@ body::after {
     margin-top: -100px;
   }
 
-  .matrix {
-    padding: 70px;
+  .matrix__right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 560px;
+            flex: 0 0 560px;
   }
 }
 
@@ -3313,6 +3312,13 @@ body::after {
 
   .acordion-item__title span {
     font-size: 1.75rem;
+  }
+
+  .matrix__right {
+    width: 470px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 470px;
+            flex: 0 0 470px;
   }
 }
 
@@ -3425,13 +3431,6 @@ body::after {
 
   .matrix__left {
     margin-bottom: 2.5rem;
-  }
-
-  .matrix__right {
-    width: 470px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 470px;
-            flex: 0 0 470px;
   }
 
   .matrix__result {
