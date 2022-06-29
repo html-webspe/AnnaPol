@@ -1024,29 +1024,16 @@ body::after {
   padding-bottom: 40px;
 }
 
-.acordion-item__button {
-  margin-top: 20px;
-}
-
-.acordion-item__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.acordion-item__group:not(:last-child) {
-  margin-right: 80px;
-}
-
-.acordion-item__group h4 {
+.acordion-item__content h4 {
   font-size: 20px;
   line-height: 1.55;
   font-weight: 600;
   color: #4b3806;
   margin-bottom: 1.25rem;
+}
+
+.acordion-item__button {
+  margin-top: 20px;
 }
 
 .acordion-item__list li {
@@ -1107,17 +1094,26 @@ body::after {
 }
 
 .meanings__title {
-  max-width: 500px;
   margin-bottom: 2.5rem;
 }
 
-.meanings__body {
+.meanings__list {
   margin-bottom: 2.5rem;
+}
+
+.meanings__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 30%;
+          flex: 0 1 30%;
+}
+
+.meanings__item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .meanings__item-title {
   font-family: "Philosopher";
-  font-size: 32px;
+  font-size: 28px;
   line-height: 130%;
   font-weight: 700;
   margin-bottom: 1.25rem;
@@ -1253,6 +1249,36 @@ body::after {
   margin-bottom: 0 !important;
 }
 
+.no-webp .matrix::before{
+  background-image: url(../img/bg/num1.png); }
+
+.matrix::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 50%;
+  height: 28%;
+}
+
+.no-webp .matrix::after{
+  background-image: url(../img/bg/num2.png); }
+
+.matrix::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  width: 20%;
+  height: 17%;
+}
+
 .matrix__body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1266,6 +1292,11 @@ body::after {
   max-width: 453px;
   font-weight: 500;
   margin-bottom: 2.5rem;
+}
+
+.matrix__left {
+  position: relative;
+  z-index: 2;
 }
 
 .matrix__button {
@@ -1386,7 +1417,7 @@ body::after {
 .sush,
 .additionnumb {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .birthday-btn {
@@ -2943,6 +2974,19 @@ body::after {
 }
 
 @media (min-width: 37.5em) {
+  .acordion-item__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .acordion-item__group:not(:last-child) {
+    margin-right: 80px;
+  }
+
   .matrix__result-group {
     margin-right: auto;
   }
@@ -3053,7 +3097,6 @@ body::after {
   }
 
   .meanings {
-    padding-top: 80px;
     padding-bottom: 60px;
   }
 
@@ -3189,10 +3232,12 @@ body::after {
     padding: 30px 0;
   }
 
-  .meanings__body {
+  .meanings__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .meanings__col:not(:last-child) {
@@ -3203,6 +3248,10 @@ body::after {
     margin-bottom: 2.5rem;
   }
 
+  .meanings__item:not(:last-child) {
+    margin-right: 36px;
+  }
+
   .contacts__item:first-child {
     padding-bottom: 24px;
     margin-bottom: 1.5rem;
@@ -3210,6 +3259,7 @@ body::after {
 
   .matrix {
     padding: 70px;
+    padding-bottom: 150px;
   }
 
   .matrix__left {
@@ -3420,6 +3470,17 @@ body::after {
 
   .matrix {
     padding: 40px 0;
+    padding-bottom: 80px;
+  }
+
+  .matrix::before {
+    width: 50%;
+    height: 140px;
+  }
+
+  .matrix::after {
+    width: 20%;
+    height: 130px;
   }
 
   .matrix__body {
@@ -3430,10 +3491,6 @@ body::after {
   }
 
   .matrix__left {
-    margin-bottom: 2.5rem;
-  }
-
-  .matrix__result {
     margin-bottom: 2.5rem;
   }
 }
@@ -3636,21 +3693,25 @@ body::after {
     left: 16px;
   }
 
+  .acordion-item__content h4 {
+    font-size: 16px;
+    margin-bottom: 0.9375rem;
+  }
+
   .gift__title {
     margin-bottom: 1.25rem;
   }
 
   .meanings {
-    padding-top: 40px;
     padding-bottom: 40px;
   }
 
   .meanings__title {
-    font-size: 1.875rem;
+    font-size: 1.5625rem;
   }
 
   .meanings__item-title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 
   .consult__title {
@@ -3680,9 +3741,17 @@ body::after {
     margin-left: -16px;
     height: 207px;
   }
+
+  .matrix__result {
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media (max-width: 37.5em) {
+  .acordion-item__group:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
   .matrix__right {
     width: 100%;
     max-width: 470px;
@@ -3702,6 +3771,7 @@ body::after {
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
+    margin-top: 2.1875rem;
   }
 
   .gift__button {
@@ -3720,6 +3790,28 @@ body::after {
   .sush,
   .additionnumb {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 22.5em) {
+  .matrix__input::-webkit-input-placeholder {
+    font-size: 52px;
+  }
+  .matrix__input::-moz-placeholder {
+    font-size: 52px;
+  }
+  .matrix__input:-ms-input-placeholder {
+    font-size: 52px;
+  }
+  .matrix__input::-ms-input-placeholder {
+    font-size: 52px;
+  }
+  .matrix__input::placeholder {
+    font-size: 52px;
+  }
+
+  .matrix__input {
+    font-size: 52px;
   }
 }
 
@@ -3849,6 +3941,10 @@ body::after {
 .webp .popup-3 .popup__bg{ background-image: url(../img/popup/bg-3.webp); }
 
 .webp .popup-4 .popup__bg{ background-image: url(../img/popup/bg-1.webp); }
+
+.webp .matrix::before{ background-image: url(../img/bg/num1.webp); }
+
+.webp .matrix::after{ background-image: url(../img/bg/num2.webp); }
 
 .webp .iti__flag{ background-image: url(../img/flags.webp); }
 
